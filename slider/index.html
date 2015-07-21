@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+			Lands' End | Apostrophe Volume 8
+		</title>
+		<meta name="description" content="Lands' End Apostrophe Volume 7">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--#include virtual="/ic_content_display_web/GlobalIncludes" -->
+		<!--#include virtual="/ic_content_display_web/GlobalIncludesFinal" -->
+	</head>
+	<body id="home-page">
+
+		<!--#include virtual="/ic_content_display_web/GlobalNavTabBar" -->
+
+		<div id="whole-page" class="whole-page">
+
+			<!--#include virtual="/ic_content_display_web/GlobalNavMasthead" -->
+			<div id="apostrophe" style='max-width:1120px;margin:0 auto' class='swipe'>
+				<div class='apostrophe-wrap'>
+					<div class="apos-slide"><i class="icon-spinner icon-spin icon-large"></i></div>
+				</div>
+				<div class="nav">
+					<button class="prev-slide"><i class="icon-chevron-left"></i></button>
+					<button class="next-slide"><i class="icon-chevron-right"></i></button>	
+				</div>
+				
+			</div>
+			<!-- BEGIN main content area -->
+			<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+			<link rel='stylesheet' type='text/css' href='font-awesome/css/font-awesome.css'>
+			<link href="style.css" type="text/css" rel="stylesheet" />
+
+			<script src='swipe.js' type='text/javascript'></script>
+			<script src='apostrophe.js' type='text/javascript'></script>
+
+			<!-- END main content area -->
+
+			<!--#include virtual="/ic_content_display_web/GlobalNavFooter" -->
+
+		</div><!-- END #whole-page -->
+		
+		<!--<button class="prev-slide"></button>
+		<button class="next-slide"></button>-->
+		<!--<div class="this-cycle-pager">&nbsp;</div>-->
+
+		<script>
+
+		$(function(){
+		    $('#apostrophe').apostrophe({
+		        content: ['slides/slide_0.html','slides/slide_1.html','slides/slide_2.html','slides/slide_3.html','slides/slide_4.html','slides/slide_5.html','slides/slide_6.html','slides/slide_7.html'],
+		        prev: '.prev-slide',
+		        next: '.next-slide',
+		        pagination: '.this-cycle-pager'
+		    });
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html, body {
+	background: #ffffff;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+	font-family: sans-serif;
+	/*min-height: 416px;*/
+}
+h1 {
+	font-size: 33px;
+	margin: 50px 0 15px;
+	text-align: center;
+	color: #212121;
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3c3c;
+	margin: 20px 10px 10px;
+}
+small {
+	margin: 0 10px 30px;
+	display: block;
+	font-size: 12px;
+}
+a, a:hover {
+	/*margin: 0 0 0 10px;
+	font-size: 12px;*/
+	color: inherit;
+	text-decoration: inherit;
+}
+
+@media(max-width:767px){
+	button.prev-slide {position:absolute;top:76px;left:0;width:100px;height:50px;}
+	button.next-slide {position:absolute;top:76px;right:0;width:100px;height:50px;}
+}
+#console {
+	font-size: 12px;
+	font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	color: #999;
+	line-height: 18px;
+	margin-top: 20px;
+	max-height: 150px;
+	overflow: auto;
+}
+#mySwipe div b {
+	display: block;
+	font-weight: bold;
+	color: #14ADE5;
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+	padding: 100px 10px;
+	box-shadow: 0 1px #EBEBEB;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid;
+	border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+.apostrophe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.apostrophe-wrap > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	top: 0;
+}
+.apos-nav {
+	width: 100%;
+	position: absolute;
+	z-index: 50;
+	top: 47%;
+}
+.apos-next, .apos-prev, .apos-pager {
+	display: inline-block;
+	color: #ccc;
+	background-color: rgba(0,0,0,.7);
+	margin: 0;
+	position: absolute;
+}
+.apos-next, .apos-prev {
+	font-size: 35px;
+	padding: 2px 15px 5px 15px;
+	height: 53px;
+}
+.apos-prev {
+	left: 0px;
+}
+.apos-next {
+	right: 0px;
+}
+.apos-pager {
+	font-family: "museo_slab", serif;
+	font-size: 12px;
+	width: 46px;
+	padding: 18px 0px 18px 0px;
+	text-align: center;
+	right: 44px;
+}
+
+.rim-hotspot img {
+	height: 100%;
+	width: 100%;
+}
+.slide-inner{
+	height:500px;
+	background-color: #ddd;
+}
+.nav{
+	width:100%;
+	text-align: center;
+}
