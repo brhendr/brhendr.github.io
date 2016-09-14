@@ -1,21 +1,85 @@
 body{
-	background-color: #234;
 	text-transform: none;
 	h1{
-		color:blue;
+		color: @lightBlue;
 	}
 	//Top page Intro
 	.page-intro{
 		text-align:center;
+		background-color: @darkBlue;
 		padding:40px;
-		.circular {
+		.circle-me {
 			width: 200px;
 			height: 200px;
 			border-radius: 100px;
 			-webkit-border-radius: 100px;
 			-moz-border-radius: 100px;
-			background: url('../assets/me_mags.jpg') no-repeat;
+			background: url('../assets/images/me_mags.jpg') no-repeat;
 			background-size: contain;
+			margin:0px auto;
+		}
+	}
+	//Prev Work Callouts
+	.prev-work{
+		.box{
+			height:300px;
+			background-color: #123443;
+			&.exp-1{background-color: #877;}
+			&.exp-2{background-color: #342;}
+			&.exp-3{background-color: #643;}
+			&.exp-4{background-color: #f23;}
+			&.exp-5{background-color: #1d4;}
+			&.exp-6{background-color: #754;}
+		}
+	}
+	.quote{
+		padding:20px;
+		font-size:22px;
+		text-align: center;
+		border-top:1px solid @lightBlue;
+		border-bottom:1px solid @lightBlue;
+		background-color: @darkBlue;
+		color:@lightBlue;
+	}
+	.my-skills{
+		background-color: @lightGray;
+		text-align:center;
+		padding-bottom:100px;
+		.skill-icon{
+			text-align: center;
+			font-size:60px;
+			text-align: center;
+			padding:28px;
+			.fa-globe{color:#88a825;}
+			.fa-file-code-o{color:#35203b;}
+			.fa-sitemap{color:#911146;}
+			.fa-users{color:#cf4a30;}
+			.fa-cogs{color:#1d83a3;}
+			.fa-puzzle-piece{color:#ed8c2b;}
+		}
+		
+	}
+	.references{
+		background-color: @pinkish;
+		color: @gray;
+		.double-quote{
+		    background-color: @white;
+		    text-align: center;
+		    font-size: 25px;
+		    line-height: 2;
+		    width: 50px;
+		    height: 50px;
+		    position: absolute;
+		    border: 2px solid @gray;
+		    border-radius: 100px;
+		    margin: auto 0;
+		    top: 25px;
+		    left: 100px;	
+		}
+		.reference{
+			padding:50px;
+			margin:50px 0;
+			background-color: @white;
 		}
 	}
 }
