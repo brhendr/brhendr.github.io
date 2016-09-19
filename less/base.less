@@ -1,13 +1,36 @@
 body{
 	text-transform: none;
+	font-family: 'raleway', sans-serif;
+	font-weight:200;
+	font-size:22px;
+	line-height:1.8;
 	h1{
-		color: @lightBlue;
+		font-size: 40px;
+	    font-weight: 600;
+	    letter-spacing: 4px;
+	    text-transform: uppercase;
+	}
+	h2{
+		font-size:24px;
+		font-weight:200;
+		padding:0;
+		margin:0;
+	}
+	p{
+		font-size:16px;
 	}
 	//Top page Intro
 	.page-intro{
 		text-align:center;
-		background-color: @darkBlue;
+		// background-image: url('../assets/images/northern_lights.jpg');
+		background-image: url('../assets/images/forest.jpg');
+		background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
 		padding:40px;
+		color:@lightGray;
+		position:fixed;
+		width:100%;
 		.circle-me {
 			width: 200px;
 			height: 200px;
@@ -18,33 +41,48 @@ body{
 			background-size: contain;
 			margin:0px auto;
 		}
+		.social{
+			padding:10px;
+			a{
+				font-size:24px;
+				padding:15px;
+				color:@white;
+			}
+		}
+		.about{
+			margin:auto;
+			max-width:700px;
+		}
+	}
+	.spacer{
+		min-height:400px;
 	}
 	//Prev Work Callouts
 	.prev-work{
 		.box{
 			height:300px;
 			background-color: #123443;
-			&.exp-1{background-color: #877;}
-			&.exp-2{background-color: #342;}
-			&.exp-3{background-color: #643;}
-			&.exp-4{background-color: #f23;}
-			&.exp-5{background-color: #1d4;}
-			&.exp-6{background-color: #754;}
+			&.exp-1{background-color: #88a825;}
+			&.exp-2{background-color: #35203b;}
+			&.exp-3{background-color: #911146;}
+			&.exp-4{background-color: #cf4a30;}
+			&.exp-5{background-color: #1d83a3;}
+			&.exp-6{background-color: #ed8c2b;}
 		}
 	}
 	.quote{
 		padding:20px;
-		font-size:22px;
+		font-size:18px;
 		text-align: center;
-		border-top:1px solid @lightBlue;
-		border-bottom:1px solid @lightBlue;
-		background-color: @darkBlue;
-		color:@lightBlue;
+		background-color: @gray;
+		color:@lightGray;
+		position:relative;
 	}
 	.my-skills{
 		background-color: @lightGray;
 		text-align:center;
 		padding-bottom:100px;
+		position:relative;
 		.skill-icon{
 			text-align: center;
 			font-size:60px;
@@ -60,6 +98,7 @@ body{
 		
 	}
 	.references{
+		position:relative;
 		background-color: @pinkish;
 		color: @gray;
 		.double-quote{

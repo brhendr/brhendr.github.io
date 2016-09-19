@@ -1,4 +1,5 @@
 $(function() {
-    console.log( "ready!" );
-    console.log('set');
+	var fixedDivHeight = $('.page-intro').height()+80;
+	console.log(fixedDivHeight); 
+    $('.spacer').height(fixedDivHeight);
 });
