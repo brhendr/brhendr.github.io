@@ -41,14 +41,20 @@ body{
 		position:fixed;
 		width:100%;
 		.circle-me {
-			width: 200px;
-			height: 200px;
-			border-radius: 100px;
-			-webkit-border-radius: 100px;
-			-moz-border-radius: 100px;
-			background: url('../assets/images/me_mags.jpg') no-repeat;
+			width: 250px;
+			height: 250px;
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+			background: url('../assets/images/amsterdam_1.jpg') no-repeat;
 			background-size: contain;
 			margin:0px auto;
+		}
+		.resume{
+			color: @green;
+			a{
+				color: @green !important;	
+			}
 		}
 		.social{
 			padding:10px;
@@ -68,14 +74,31 @@ body{
 	}
 	//Prev Work Callouts
 	.prev-work{
+		background-color: @gray;
 		.box{
-			background-color: #123443;
-			&.exp-1{background-color: #88a825;}
-			&.exp-2{background-color: #35203b;}
-			&.exp-3{background-color: #911146;}
-			&.exp-4{background-color: #cf4a30;}
-			&.exp-5{background-color: #1d83a3;}
-			&.exp-6{background-color: #ed8c2b;}
+			cursor:pointer;
+			background-color:@gray;
+			&:hover img {
+			  opacity: 0.3;
+			}
+			&:hover .middle {
+			  opacity: 1;
+			}
+			.middle {
+			  transition: .5s ease;
+			  opacity: 0;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%)
+			}
+			.text {
+			  background-color: @green;
+			  color: white;
+			  font-size: 14px;
+			  padding: 5px 10px;
+			}
 		}
 	}
 	.quote{
@@ -96,7 +119,7 @@ body{
 			font-size:60px;
 			text-align: center;
 			padding:28px;
-			.fa-globe{color:#88a825;}
+			.fa-globe{color:@green;}
 			.fa-file-code-o{color:#35203b;}
 			.fa-sitemap{color:#911146;}
 			.fa-users{color:#cf4a30;}
@@ -128,5 +151,33 @@ body{
 			margin:50px 0;
 			background-color: @white;
 		}
+	}
+	#ft{
+		background-color: @white;
+		position:relative;
+		padding:10px;
+		font-size:12px;
+	}
+	.overlay{
+		position: fixed;
+	    width: 100%;
+    	top: 0px;
+    	height:100%;
+    	display:none;
+    	.overlay-inner{
+    		margin:3%;
+    		background-color: #ccc;
+    		height:100%;
+    		.close{
+    			cursor:pointer;
+    			margin:10px;
+    			text-align: right;
+    			border-bottom:1px solid #bbb;
+    			img{
+    				width:50px;
+    				padding:10px;
+    			}
+    		}
+    	}
 	}
 }
