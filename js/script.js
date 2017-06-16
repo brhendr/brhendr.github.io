@@ -26,8 +26,8 @@ var data = [
 ];
 
 $(function() {
-  console.log($('.page-intro').height());
-	var fixedDivHeight = $('.page-intro').height()+50;
+  console.log($('.page-intro').outerHeight(true));
+	var fixedDivHeight = $('.page-intro').outerHeight(true);
   console.log(fixedDivHeight)
     $('.spacer').height(fixedDivHeight);
 });
