@@ -28,6 +28,7 @@ var data = [
 $(function() {
   console.log($('.page-intro').height());
 	var fixedDivHeight = $('.page-intro').height()+50;
+  console.log(fixedDivHeight)
     $('.spacer').height(fixedDivHeight);
 });
 
