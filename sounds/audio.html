@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <title></title>
+</head>
+<body>
+        <div class="fn-play-sound">
+            <audio class="audio" src="sounds/chelsea_dagger.mp3" autostart="false" ></audio>
+            <img src="hawks.png"  width="100%"/>
+        </div>
+        <div class="fn-play-sound">
+            <audio class="audio" src="sounds/VikingHorn.mp3" autostart="false" ></audio>
+            <img src="viks.png"  width="100%"/>
+        </div>
+        <div class="fn-play-sound">
+            <audio class="audio" src="sounds/longpickle.mp3" autostart="false" ></audio>
+            <img src="pickle.jpg"  width="100%"/>
+        </div>
+        <div class="fn-play-sound">
+            <audio class="audio" src="sounds/woo_vu_luvub_dub_dub.wav" autostart="false" ></audio>
+            <img src="rick.png"  width="100%"/>
+        </div>
+        
+</body>
+
+<script>
+        
+    $('.fn-play-sound').on('click', function(){
+        $(this).find('.audio').get(0).play()
+    })
+
+</script>
+<style>
+    .fn-play-sound{
+        width:40%;
+        padding:5%;
+        float:left;
+    }
+    .fn-play-sound img{
+        border-radius: 99px;
+        border:1px solid #DDD;
+    }
+</style>
+</html>
