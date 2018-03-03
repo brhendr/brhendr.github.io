@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lease Countdown</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<style>
+		body{ 
+			font-family: 'Noto Sans', sans-serif; 
+			text-align:center;
+			font-size: 30px;
+		}
+		</style>
+		<div class="container">
+			<img src="car.png" alt="" width="50%">
+
+			<div class="stats">
+				<div class="days-remaining"></div>
+				<div class="estimated-miles"></div>
+			</div>			
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script>
+			var totalLeaseDays = 1095;
+			var d = new Date();
+			function daysUntil(year, month, day) {
+			  var now = new Date(),
+			      dateEnd = new Date(year, month - 1, day), // months are zero-based
+			      days = (dateEnd - now) / 1000/60/60/24;   // convert milliseconds to days
+
+			  return Math.round(days);
+			}
+			$('.days-remaining').html((d.getMonth()+1) + "/" + d.getDate()+ "/" + d.getFullYear() )
+			$('.estimated-miles').html((45000 * (1-(daysUntil(2020, 1, 15)/totalLeaseDays))).toFixed()+ " Miles");
+			
+		</script>
+	</body>
+</html>
